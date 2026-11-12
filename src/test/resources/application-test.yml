@@ -1,0 +1,7 @@
+app:
+  base-url: http://localhost:8080
+  frontend-url: http://localhost:3000
+  jwt:
+    secret: dGVzdC1vbmx5LWp3dC1zZWNyZXQtTk9ULUEtUkVBTC1LRVktMDEyMzQ1Njc4OQ==
+  ticket:
+    hmac-secret: dGVzdC1vbmx5LXRpY2tldC1obWFjLU5PVC1BLVJFQUwtS0VZLTAxMjM0NTY3ODk=
