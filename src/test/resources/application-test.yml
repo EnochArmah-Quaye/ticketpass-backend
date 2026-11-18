@@ -1,3 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ignored:5434/ignored
+    username: ignored
+    password: ignored
+
+
+
+
 app:
   base-url: http://localhost:8080
   frontend-url: http://localhost:3000
