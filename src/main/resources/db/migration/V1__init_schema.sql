@@ -94,8 +94,8 @@ CREATE TABLE orders (
 CREATE INDEX idx_orders_status_expiry ON orders (status, expires_at);
 CREATE INDEX idx_orders_buyer ON orders (buyer_id, created_at DESC);
 
--- 6. orders_items (depends on: orders, ticket_types)
-CREATE TABLE orders_items (
+-- 6. order_items (depends on: orders, ticket_types)
+CREATE TABLE order_items (
    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
    order_id UUID NOT NULL REFERENCES orders (id) ON DELETE CASCADE,
    ticket_type_id UUID NOT NULL REFERENCES ticket_types (id),
