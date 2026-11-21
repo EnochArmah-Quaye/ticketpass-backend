@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/step-java@v4
+      - uses: actions/setep-java@v4
         with:
           java-version: '21'
           distribution: temurin
@@ -34,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: surefire-reports
-          path: target/surfire-reports
+          path: target/surefire-reports
